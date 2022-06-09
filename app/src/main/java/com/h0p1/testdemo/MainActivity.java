@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         SekiroWebSocketClient webSocketClient = null;
         try {
-            webSocketClient = new SekiroWebSocketClient(new URI("ws://192.168.1.5:5612/business-demo/register?group=aaa&clientId=android01"));
+            webSocketClient = new SekiroWebSocketClient(new URI("ws://192.168.1.5:5612/api/register?group=aaa&clientId=android01&vkey=test"));
         } catch (URISyntaxException e) {
             e.printStackTrace();
             return;
